@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0f0f0f;
+}
+
+#outer{
+    height: 500px;
+    width: 100%;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1A1A;
+}
+
+#inner{
+    height: 250px;
+    width: 200px;
+    border: 5px solid #00E5FF;
+    border-radius: 12px;
+    position: absolute;
+    left: 30%;
+    background-color: aqua;
+    background-image: url(Image/outere\ logo.jpg);
+    background-size: cover;
+}
+
+a{
+    color: #00E5FF;
+    font-size: 40px;
+    font-family: impact;
+    font-weight: 400px;
+    position: absolute;
+    left: 710px;
+    bottom: 300px;
+    text-decoration: none;
+}
+
+#name{
+    color: #00E5FF;
+    font-family: sans-serif;
+    position: relative;
+    left: 285px;
+    top: -65px;
+    font-size: 35px;
+
+}
+#mywrokname{
+    color: #00E5FF;
+    font-family: sans-serif;
+    position: relative;
+    left: -5px;
+    top: -30px;
+    font-size: 15px;
+
+
+}
