@@ -121,6 +121,9 @@ a{
         width: 80%;
         height: 200px;
         margin: auto;
+        background-image: url(Image/outere\ logo.jpg);
+        background-size: cover;
+
     }
 
     #name {
