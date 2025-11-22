@@ -119,8 +119,6 @@ a{
 
     #inner {
         position: static;
-        width: 80%;
-        height: 200px;
         margin-right: 50px;
         
 
@@ -150,6 +148,39 @@ a{
         display: block;
         margin-right: 35px;
     }
+
+
+    
+  @keyframes diagonalMove {
+    from {
+      transform: translate(300px, -200px);
+    }
+    to {
+      transform: translate(-300px, 400px);
+    }
+  }
+
+  .shooting_star {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background-color: white;
+      border-radius: 50%;
+      animation: diagonalMove 5s linear infinite;
+      opacity: 1;
+      z-index: 10;
+  }
+
+  .shooting_star:nth-child(1) { top: -50px; left: 90%; animation-delay: 0s; }
+  .shooting_star:nth-child(2) { top: -80px; left: 70%; animation-delay: 0.5s; }
+  .shooting_star:nth-child(3) { top: -20px; left: 40%; animation-delay: 1s; }
+  .shooting_star:nth-child(4) { top: -120px; left: 20%; animation-delay: 1.5s; }
+  .shooting_star:nth-child(5) { top: -60px; left: 5%; animation-delay: 2s; }
+  .shooting_star:nth-child(6) { top: -110px; left: 85%; animation-delay: 2.5s; }
+  .shooting_star:nth-child(7) { top: -30px; left: 55%; animation-delay: 3s; }
+  .shooting_star:nth-child(8) { top: -140px; left: 10%; animation-delay: 3.5s; }
+  .shooting_star:nth-child(9) { top: -95px; left: 60%; animation-delay: 4s; }
+  .shooting_star:nth-child(10) { top: -45px; left: 25%; animation-delay: 4.5s; }
 
 
 }
