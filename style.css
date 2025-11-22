@@ -107,6 +107,8 @@ a{
         align-items: flex-start;
         height: auto;
         padding-top: 20px;
+        display: flex;
+        justify-content: center;
     }
 
     #outer {
@@ -123,6 +125,7 @@ a{
         margin: auto;
         background-image: url(Image/outere\ logo.jpg);
         background-size: cover;
+        
 
     }
 
