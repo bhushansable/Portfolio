@@ -99,53 +99,52 @@ a{
 }
 
 /* add new feature */
+@media (max-width: 500px) {
 
-@media (width: 400px){
-    
     body {
-        display: flex;
-        justify-content: center;
-        
-        
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
     }
 
     #outer {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
         display: flex;
-        width: 350px;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: none;
     }
 
+    /* Remove absolute positioning on small screens */
     #inner {
-        top: 99px;
-        left: 99px;
+        position: static;
+        margin-bottom: 20px;
+        width: 200px;
+        height: 250px;
     }
-    
-
-    
 
     #name {
-        position: relative;
-        top: 60px;
-        left: 80px;
+        position: static;
+        margin-top: 10px;
+        font-size: 26px;
+        text-align: center;
     }
-       
-    
 
     #mywrokname {
-
-        position: relative;
-        top: 140px;
-        left: -90px;
-     
+        position: static;
+        font-size: 14px;
+        text-align: center;
+        max-width: 80%;
     }
 
     a {
-       
-        position: absolute;
-        left: 90px;
-        bottom: 100px;
+        position: static;
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
     }
-
 }
 
 /* this is androide style */
