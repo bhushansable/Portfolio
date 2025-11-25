@@ -55,6 +55,14 @@ body{
     background-color: #1A1A1A;
 }
 
+@keyframes boxAnimate {
+   form{border: 5px solid #00e5ff;}
+   to { border: 5px solid red;}
+}
+
+#inner:hover{
+    animation:boxAnimate 2s 0s  infinite ;
+}
 #inner{
     height: 250px;
     width: 200px;
@@ -67,6 +75,16 @@ body{
     background-size: cover;
 }
 
+@keyframes NmaeAnimate{
+    from{color: #00E5FF;
+         }
+    to {color: red;
+        }
+
+}
+a:hover{
+    animation:NmaeAnimate 5s 0s  ;
+}
 a{
     color: #00E5FF;
     font-size: 40px;
