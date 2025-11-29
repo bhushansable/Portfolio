@@ -1,168 +1,83 @@
-body{
+*{
+    color: white;
+    margin: 0%;
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f0f0f;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #0f0f0f;
-    
 }
-
-@keyframes diagonalMove {
-  from {
-    transform: translate(300px, -200px); /* start right + top */
-  }
-  to {
-    transform: translate(-300px, 400px); /* end left + bottom */
-  }
-}
-
-
-/* Fixed shooting star style */
-.shooting_star {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background-color: white;
-    border-radius: 50%;
-    animation: diagonalMove 5s linear infinite;
-    opacity: 1;
-    z-index: 10;
-}
-
-/* Different starting positions */
-.shooting_star:nth-child(1) { top: -50px; left: 90%; animation-delay: 0s; }
-.shooting_star:nth-child(2) { top: -80px; left: 70%; animation-delay: 0.5s; }
-.shooting_star:nth-child(3) { top: -20px; left: 40%; animation-delay: 1s; }
-.shooting_star:nth-child(4) { top: -120px; left: 20%; animation-delay: 1.5s; }
-.shooting_star:nth-child(5) { top: -60px; left: 5%; animation-delay: 2s; }
-.shooting_star:nth-child(6) { top: -110px; left: 85%; animation-delay: 2.5s; }
-.shooting_star:nth-child(7) { top: -30px; left: 55%; animation-delay: 3s; }
-.shooting_star:nth-child(8) { top: -140px; left: 10%; animation-delay: 3.5s; }
-.shooting_star:nth-child(9) { top: -95px; left: 60%; animation-delay: 4s; }
-.shooting_star:nth-child(10) { top: -45px; left: 25%; animation-delay: 4.5s; }
-
-
-
 
 #outer{
-    height: 500px;
-    width: 100%;
-    border: 5px solid black;
+    height: 100px;
+    width: 80vw;
+    border-radius: 2px;
+    border: 0.5px solid white;
+    background-color: #1A1A1A;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1A1A1A;
-}
-
-@keyframes boxAnimate {
-   form{border: 5px solid #00e5ff;}
-   to { border: 5px solid red;}
-}
-
-#inner:hover{
-    animation:boxAnimate 2s 0s  infinite ;
+   
 }
 #inner{
-    height: 250px;
-    width: 200px;
-    border: 5px solid #00E5FF;
-    border-radius: 12px;
-    position: absolute;
-    left: 30%;
-    background-color: aqua;
+    height: 80px;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+
+
+}
+#image{
+    height: 62px;
+    width: 50px;
+    border-radius: 2px;
+    border: 2px solid #00E5FF ;
+    background-color: blue;
     background-image: url(Image/outere\ logo.jpg);
     background-size: cover;
 }
 
-@keyframes NmaeAnimate{
-    from{color: #00E5FF;
-         }
-    to {color: red;
-        }
-
-}
-a:hover{
-    animation:NmaeAnimate 5s 0s  ;
-}
-a{
-    color: #00E5FF;
-    font-size: 40px;
-    font-family: impact;
-    font-weight: 400px;
-    position: absolute;
-    left: 710px;
-    bottom: 300px;
-    text-decoration: none;
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #name{
-    color: #00E5FF;
-    font-family: sans-serif;
+    font-size: 10px;
+    align-items: center;
     position: relative;
-    left: 285px;
-    top: -65px;
-    font-size: 35px;
-
+    bottom: 15px;
+    left: 5px;
 }
-#mywrokname{
-    color: #00E5FF;
-    font-family: sans-serif;
+
+#work {
+    font-size: 5px;
     position: relative;
-    left: -5px;
-    top: -30px;
-    font-size: 15px;
-
-
+    bottom: 15px;
+    left: 5px;
 }
 
-/* add new feature */
-@media (max-width: 500px) {
-
-    body {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-    }
-
-    #outer {
-        width: 100%;
-        height: auto;
-        padding: 20px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: none;
-    }
-
-    /* Remove absolute positioning on small screens */
-    #inner {
-        position: static;
-        margin-bottom: 20px;
-        width: 200px;
-        height: 250px;
-    }
-
-    #name {
-        position: static;
-        margin-top: 10px;
-        font-size: 26px;
-        text-align: center;
-    }
-
-    #mywrokname {
-        position: static;
-        font-size: 14px;
-        text-align: center;
-        max-width: 80%;
-    }
-
-    a {
-        position: static;
-        margin-top: 20px;
-        font-size: 20px;
-        text-align: center;
-    }
+#link{
+    font-size: 9px;
+    position: relative;
+    left: 5px;
+   
+}
+a{
+     text-decoration: none;
+    color: #00E5FF;
 }
 
-/* this is androide style */
+@keyframes textColor{
+    from{color:  #00E5FF;}
+    to {color:  red;}
+}
+
+a:hover{
+      animation:  textColor 1s 0s ease-in infinite;
+}
