@@ -14,6 +14,17 @@
     align-items: center;
 }
 
+
+#Mode{
+    position: relative;
+    bottom:350px;
+    right: 40px;
+    color: white;
+    background-color: rebeccapurple;
+    
+}
+
+
 /*  this is the outer box  */
 
 
@@ -102,7 +113,12 @@ a:hover{
 /*  start of media query  */
 
 @media (max-width: 480px) {
-     #outer {
+
+#Mode {
+       display: none;
+    }
+    
+#outer {
     height: 100%;
     width: 80%;
     border-radius: 2px;
