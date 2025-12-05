@@ -181,10 +181,13 @@ a:hover{
     html, body {
     overflow: hidden;
 }
-
+#outer {
+    overflow: hidden;
+}
 #Mode {
        display: none;
     }
+
     
 #outer {
     height: 100%;
