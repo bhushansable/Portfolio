@@ -178,6 +178,9 @@ a:hover{
 /*  start of media query  */
 
 @media (max-width: 480px) {
+    html, body {
+    overflow: hidden;
+}
 
 #Mode {
        display: none;
