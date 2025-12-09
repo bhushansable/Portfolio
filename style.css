@@ -255,12 +255,12 @@ a:hover{
 }
 
 #link {
-    font-size: 10px;
+    font-size: 15px;
     position: relative;
     top: 20px;
     right: 180px;
     height: 40px;
     width: 190px;
-    
+    text-align: center;
 }
 }
