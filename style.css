@@ -3,6 +3,7 @@
     margin: 0%;
 }
 
+
 @keyframes shootingstar {
     to{transform: translate(300px,800px)}
 }
@@ -14,7 +15,7 @@
     box-shadow: 0 0 10px white, 0 0 20px white;
     background-color: white;
     position: relative;
-    top: 1px;
+    top: 0px;
     animation:shootingstar 1.5s 1s linear infinite;
 }
 
@@ -28,7 +29,7 @@
     box-shadow: 0 0 10px white, 0 0 20px white;
     background-color: white;
     position: relative;
-    top: 5px;
+    top: 0px;
     left: 200px;
     animation:shootingstar1 1.5s 6s linear infinite;
 }
@@ -44,7 +45,7 @@
     box-shadow: 0 0 10px white, 0 0 20px white;
     background-color: white;
     position: relative;
-    top: 2px;
+    top: 0px;
     left: 600px;
     animation:shootingstar2 1.5s 4s linear infinite;
 }
@@ -59,7 +60,7 @@
     box-shadow: 0 0 10px white, 0 0 20px white;
     background-color: white;
     position: relative;
-    top: -1px;
+    top: 0px;
     left: 1100px;
     animation:shootingstar 1.5s 2s linear infinite;
 }
@@ -125,7 +126,10 @@
     background-color: blue;
     background-image: url(Image/IMG_20251208_215721.jpg);
     background-size: cover;
+    
 }
+
+
 
 /*  this is the text box  */
 .text-box {
@@ -160,26 +164,46 @@
     height: 30px;
     width: 180px;
     border-radius: 3px;
-    background-color: #00E5FF;
+    background:linear-gradient(to right ,#2abfff ,#0071ff) ;
     text-align: center;
+    z-index: 0;
+    color: white;
 
    
 }
 
+#link::after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 0%;
+    background:linear-gradient(to right ,#ffee00 ,#ffb300) ;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: 130ms ease-in-out;
+
+}
+
+#link:hover::after{
+    width: 100%;
+    color: black;
+    
+}
+
+
 /*  this is A link  */
 a{
      text-decoration: none;
-    color: black;
-}
-/*  this is A link animation  */
-@keyframes textColor{
-    from{color:  #00E5FF;}
-    to {color:  red;}
+     transition: 130ms ease-in-out;
+   
+    
 }
 
 a:hover{
-      animation:  textColor 1s 0s ease-in infinite;
+    color: black;
 }
+
 
 
 
