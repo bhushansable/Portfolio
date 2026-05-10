@@ -557,6 +557,37 @@ section {
   letter-spacing: 1px;
 }
 
+.proj-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-live,
+.btn-github {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-live {
+  background: #007bff;
+  color: white;
+}
+
+.btn-github {
+  background: #222;
+  color: white;
+}
+
+.btn-live:hover,
+.btn-github:hover {
+  transform: scale(1.05);
+}
+
+
 /* CONTACT */
 #contact { flex-direction: column; gap: 2.5rem; text-align: center; }
 .contact-line {
